@@ -30,6 +30,16 @@ namespace BinarySearchTree
                 ROOT = null; // intializing root to null
             }
             public void insert(string element)// insert a node in the binary
+            {
+                node tnp, parent = null, currentnode = null;
+                find(element, ref parent, ref currentnode);
+                if (currentnode != null)
+                {
+                    Console.WriteLine("Duplicate words not allowed");
+                    return;
+                }
+                else // if the specified node is not present
+            }
         }
 
 
