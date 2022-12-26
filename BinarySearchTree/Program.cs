@@ -14,6 +14,23 @@ namespace BinarySearchTree
 
         //Constructor for the node class
 
+        public node(string i, node l, node r)
+        {
+            info = i;
+            lchild = l;
+            rchild = r;
+        }
+
+        class BinaryThree
+        {
+            public node ROOT;
+
+            public BinaryThree()
+            {
+                ROOT = null; // intializing root to null
+            }
+        }
+
 
 
 
