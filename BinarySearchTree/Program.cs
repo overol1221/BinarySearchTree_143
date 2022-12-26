@@ -104,15 +104,34 @@ namespace BinarySearchTree
                     Console.WriteLine(ptr.info + "");
                 }
             }
-        }
 
+            static void Main(string[] args)
+            {
+                BinaryThree x = new BinaryThree();
+                while(true)
+                {
+                    Console.WriteLine("\n Menu");
+                    Console.WriteLine("1. implement insert operation ");
+                    Console.WriteLine("2. perfom inorder traversal");
+                    Console.WriteLine("3. perfom preorder traversal");
+                    Console.WriteLine("4. perfom postorder traversal");
+                    Console.WriteLine("5. exit");
+                    Console.Write("\nEnter your choice (1-5 ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
 
-
-
-
-
-        static void Main(string[] args)
-        {
+                    }
+                }
+            }
         }
     }
+
 }
+
+
+
+
+
+
+
