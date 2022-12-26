@@ -63,7 +63,20 @@ namespace BinarySearchTree
                 parent = null;
                 while ((currentnode != null) && (currentnode.info != null))
                 {
+                    parent = currentnode;
+                    if (string.Compare(element, parent.info) < 0)
+                        currentnode = currentnode.rchild;
+                    else
+                        currentnode = currentnode.lchild;
+                }
+            }
 
+            public void inorder(node ptr)
+            {
+                if(ROOT == null)
+                {
+                    Console.WriteLine(" tree is empty");
+                    return;
                 }
             }
         }
