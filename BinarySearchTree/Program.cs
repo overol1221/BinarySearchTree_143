@@ -129,7 +129,25 @@ namespace BinarySearchTree
                             break;
                         case '2':
                             {
-                                x.preorder
+                                x.inorder(x.ROOT);
+                            }
+                            break ;
+                        case '3':
+                            {
+                                x.preorder(x.ROOT);
+                            }
+                            break;
+                        case '4':
+                            {
+                                x.postorder(x.ROOT);
+                            }
+                            break;
+                        case '5':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine(" invalid optiob! ");
+                                break;
                             }
                     }
                 }
