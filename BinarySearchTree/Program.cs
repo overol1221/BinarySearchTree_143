@@ -95,6 +95,15 @@ namespace BinarySearchTree
                     preorder(ptr.rchild);
                 }
             }
+            public void postorder(node ptr)
+            {
+                if (ROOT != null)
+                {
+                    postorder(ptr.lchild);
+                    postorder(ptr.rchild);
+                    Console.WriteLine(ptr.info + "");
+                }
+            }
         }
 
 
