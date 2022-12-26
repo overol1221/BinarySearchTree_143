@@ -52,8 +52,18 @@ namespace BinarySearchTree
                     }
                     else
                     {
-                       
+                       parent.rchild = tmp;
                     }
+
+                }
+            }  
+            private void find(string element, ref node parent, ref node currentnode)
+            {
+                currentnode = ROOT;
+                parent = null;
+                while ((currentnode != null) && (currentnode.info != null))
+                {
+
                 }
             }
         }
