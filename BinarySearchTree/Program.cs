@@ -120,7 +120,17 @@ namespace BinarySearchTree
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
                     {
-
+                        case '1':
+                            {
+                                Console.WriteLine(" enter word");
+                                string word = Console.ReadLine();
+                                x.insert(word);
+                            }
+                            break;
+                        case '2':
+                            {
+                                x.preorder
+                            }
                     }
                 }
             }
